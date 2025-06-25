@@ -1,3 +1,6 @@
+#!/usr/bin/env python3
+# This script is Python3 as specified by the shebang and syntax.
+
 def safestrtonum(
     string,
 ):  # this function is a joke and it was made to look at isinstance() in greater detail. if you're so confident, rewrite it without some int(float()) or try expect spaghetti with that and i will learn from it :)
@@ -30,6 +33,3 @@ def safestrtonum(
             raise ValueError(
                 f"could not convert str to int/float: {string}. This is likely a problem with the function, not the provided arguments or values."
             )
-
-
-print(type(safestrtonum("2.1")))
